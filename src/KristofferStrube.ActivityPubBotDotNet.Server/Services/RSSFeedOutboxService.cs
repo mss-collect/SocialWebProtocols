@@ -1,4 +1,4 @@
-﻿using KristofferStrube.ActivityStreams;
+using KristofferStrube.ActivityStreams;
 using KristofferStrube.ActivityStreams.JsonLD;
 using System.ServiceModel.Syndication;
 using System.Xml;

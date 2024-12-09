@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace KristofferStrube.ActivityPubBotDotNet.Server.WebFinger;
 
@@ -15,8 +15,8 @@ public class ResourceLink
 
     public ResourceLink(string rel, string type, Uri href)
     {
-        Rel = rel;
-        Type = type;
-        Href = href;
+        this.Rel = rel;
+        this.Type = type;
+        this.Href = href;
     }
 }
