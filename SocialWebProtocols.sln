@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KristofferStrube.ActivityStreams", "src\KristofferStrube.ActivityStreams\KristofferStrube.ActivityStreams.csproj", "{2CD1ADE2-80CC-4E35-825C-2EB1DDF463A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KristofferStrube.ActivityPubBotDotNet.Server", "src\KristofferStrube.ActivityPubBotDotNet.Server\KristofferStrube.ActivityPubBotDotNet.Server.csproj", "{96504459-E471-4AD9-B754-37247E4BA833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KristoffferStrube.ActivityPubBotDotNet.Client", "src\KristoffferStrube.ActivityPubBotDotNet.Client\KristoffferStrube.ActivityPubBotDotNet.Client.csproj", "{70391641-F07E-4587-8BBA-FB276C3F437E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{2CD1ADE2-80CC-4E35-825C-2EB1DDF463A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CD1ADE2-80CC-4E35-825C-2EB1DDF463A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CD1ADE2-80CC-4E35-825C-2EB1DDF463A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96504459-E471-4AD9-B754-37247E4BA833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96504459-E471-4AD9-B754-37247E4BA833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96504459-E471-4AD9-B754-37247E4BA833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96504459-E471-4AD9-B754-37247E4BA833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70391641-F07E-4587-8BBA-FB276C3F437E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70391641-F07E-4587-8BBA-FB276C3F437E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70391641-F07E-4587-8BBA-FB276C3F437E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70391641-F07E-4587-8BBA-FB276C3F437E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
