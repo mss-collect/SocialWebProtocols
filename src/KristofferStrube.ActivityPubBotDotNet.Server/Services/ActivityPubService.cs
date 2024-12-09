@@ -1,4 +1,4 @@
-﻿using KristofferStrube.ActivityStreams;
+using KristofferStrube.ActivityStreams;
 using System.Globalization;
 using System.Net.Http.Headers;
 using System.Security.Cryptography;
@@ -96,8 +96,7 @@ public class ActivityPubService
 
     private string ComputeSignature(string stringToSign)
     {
-        string privateKey = configuration["PEM:Private"];
-
+        string privateKey = configuration["PEM:Private"] ?? string.Empty;
         RSA rsa = RSA.Create();
         rsa.ImportFromPem(privateKey.ToCharArray());
         byte[] bytes = Encoding.ASCII.GetBytes(stringToSign);
