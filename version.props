@@ -14,6 +14,7 @@
   </PropertyGroup>
   
   <PropertyGroup>
+    <NoWarn>CS1591;IDE01030</NoWarn>
     <SuppressNETCoreSdkPreviewMessage>false</SuppressNETCoreSdkPreviewMessage>
     <NuGetAudit>false</NuGetAudit>
   </PropertyGroup>
