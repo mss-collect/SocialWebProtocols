@@ -14,7 +14,7 @@ builder.Services.AddScoped<IOutboxService>(_ => new RSSFeedOutboxService("https:
 
 // Configure the database
 string connectionString = builder.Configuration.GetConnectionString("Todos") ?? "Data Source=.db/Todos.db";
-builder.Services.AddSqlite<ActivityPubDbContext>(connectionString);
+//builder.Services.AddSqlite<ActivityPubDbContext>(connectionString);
 
 WebApplication app = builder.Build();
 
@@ -31,11 +31,11 @@ app.UseHttpsRedirection();
 app.MapUsers();
 app.MapWebFingers();
 
-ActivityPubDbContext dbContext = app.Services.CreateScope().ServiceProvider.GetRequiredService<ActivityPubDbContext>();
-if (!dbContext.Users.Any(u => u.Name == "Bot"))
-{
-    dbContext.Add(new UserInfo("Bot", $"{app.Configuration["HostUrls:Server"]}/Users/bot"));
-    dbContext.SaveChanges();
-}
+//ActivityPubDbContext dbContext = app.Services.CreateScope().ServiceProvider.GetRequiredService<ActivityPubDbContext>();
+//if (!dbContext.Users.Any(u => u.Name == "Bot"))
+//{
+//    dbContext.Add(new UserInfo("Bot", $"{app.Configuration["HostUrls:Server"]}/Users/bot"));
+//    dbContext.SaveChanges();
+//}
 
 app.Run();
