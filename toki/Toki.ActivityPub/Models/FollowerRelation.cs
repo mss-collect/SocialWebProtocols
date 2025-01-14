@@ -1,0 +1,27 @@
+namespace Toki.ActivityPub.Models;
+
+/// <summary>
+/// A follower relation.
+/// </summary>
+public class FollowerRelation : RemoteableModel
+{
+    /// <summary>
+    /// The follower user.
+    /// </summary>
+    public required User Follower { get; init; }
+    
+    /// <summary>
+    /// The id of the follower.
+    /// </summary>
+    public required Ulid FollowerId { get; init; }
+    
+    /// <summary>
+    /// The followee user.
+    /// </summary>
+    public required User Followee { get; init; }
+    
+    /// <summary>
+    /// The ID of the followee.
+    /// </summary>
+    public required Ulid FolloweeId { get; init; }
+}

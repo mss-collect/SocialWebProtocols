@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+        <GarbageCollectionAdaptationMode>1</GarbageCollectionAdaptationMode>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GitInfo" Version="3.3.4">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Hangfire.AspNetCore" Version="1.8.10" />
+        <PackageReference Include="Hangfire.Redis.StackExchange" Version="1.9.4-beta.1" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.0-preview.2.24128.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Toki.ActivityPub\Toki.ActivityPub.csproj" />
+      <ProjectReference Include="..\Toki.ActivityStreams\Toki.ActivityStreams.csproj" />
+      <ProjectReference Include="..\Toki.HTTPSignatures\Toki.HTTPSignatures.csproj" />
+    </ItemGroup>
+
+</Project>
