@@ -1,10 +1,10 @@
 <Project>
   <!-- this file is loaded for /src, /tests, /samples-->
   <PropertyGroup>
-    <MajorVersion>5</MajorVersion>
-    <MinorVersion>2</MinorVersion>
-    <PatchVersion>0</PatchVersion>
-    <PreReleaseLabel></PreReleaseLabel>
+    <MajorVersion>0</MajorVersion>
+    <MinorVersion>0</MinorVersion>
+    <PatchVersion>1</PatchVersion>
+    <PreReleaseLabel>proto-01</PreReleaseLabel>
     <VersionPrefix>$(MajorVersion).$(MinorVersion).$(PatchVersion)</VersionPrefix>
     <VersionSuffix Condition="'$(PreReleaseLabel)' == ''"></VersionSuffix>
     <VersionSuffix Condition="'$(PreReleaseLabel)' != ''">-$(PreReleaseLabel)</VersionSuffix>
